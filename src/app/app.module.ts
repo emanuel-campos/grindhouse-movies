@@ -4,10 +4,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './/app-routing.module';
 
 import { AppComponent } from './app.component';
+import { ExplorarComponent } from './explorar/explorar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExplorarComponent
   ],
   imports: [
     BrowserModule,
