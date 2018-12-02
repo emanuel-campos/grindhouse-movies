@@ -1,0 +1,12 @@
+@import 'variables';
+@import "~bootstrap/scss/bootstrap";
+@import 'mixins';
+@import 'fonts';
+@import 'icons';
+
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-weight: 300;
+  background-color: $bg-site;
+}

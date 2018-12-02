@@ -1,0 +1,58 @@
+@import '../assets/scss/variables';
+
+/* BEGIN topo */
+.topo-navbar {
+  padding: 17px 30px;
+}
+
+.topo-avatar {
+  width: 40px;
+  height: 40px;
+}
+
+.topo-avatar-link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* menu */
+.topo-menu {
+  .topo-menu-item {
+    .topo-menu-link {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .topo-menu-item:first-child {
+    .topo-menu-link {
+      padding-left: 0;
+    }
+  }
+
+  .topo-menu-item:last-child {
+    .topo-menu-link {
+      padding-right: 0;
+    }
+  }
+}
+
+.topo-menu-item {
+  &.active {
+    .topo-menu-link {
+      color: $color-link-active;
+    }
+  }
+}
+
+.topo-menu-link {
+  color: $color-link;
+  font-size: 16px;
+
+  &:hover,
+  &:focus {
+    color: $color-link-active;
+  }
+}
+
+/* END topo */
