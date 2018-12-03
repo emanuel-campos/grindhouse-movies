@@ -1,5 +1,12 @@
 @import '../../assets/scss/variables';
 
+/* BEGIN geral */
+.explorar-section {
+  margin-bottom: 50px;
+}
+/* END geral */
+
+/* BEGIN search */
 .search-box {
   background: $primary-color url('../../assets/images/bg-search-box.png') no-repeat center center/cover;
   border-radius: 30px;
@@ -33,3 +40,16 @@
   font-size: 22.5px;
   color: $primary-color;
 }
+/* END search */
+
+/* BEGIN featured-movies */
+.featured-movies,
+.viewed-movies {
+  margin-bottom: 15px;
+}
+
+.featured-movies-item,
+.viewed-movies-item {
+  margin-bottom: 35px;
+}
+/* END featured-movies */
