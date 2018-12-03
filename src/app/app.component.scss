@@ -1,6 +1,19 @@
 @import '../assets/scss/variables';
+@import '../assets/scss/mixins';
 
 /* BEGIN topo */
+.topo {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  @include media-queries('tablet', max) {
+    bottom: 0;
+    top: auto;
+  }
+}
 .topo-navbar {
   padding: 17px 30px;
 }
