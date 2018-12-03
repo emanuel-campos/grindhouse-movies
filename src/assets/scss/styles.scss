@@ -11,6 +11,11 @@ body {
   background-color: $bg-site;
 }
 
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
 /* BEGIN icons */
 .has-icon-fixed {
   position: relative;

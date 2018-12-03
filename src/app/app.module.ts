@@ -5,11 +5,13 @@ import { AppRoutingModule } from './/app-routing.module';
 
 import { AppComponent } from './app.component';
 import { ExplorarComponent } from './explorar/explorar.component';
+import { TitleSectionComponent } from './shared/title-section/title-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ExplorarComponent
+    ExplorarComponent,
+    TitleSectionComponent
   ],
   imports: [
     BrowserModule,
