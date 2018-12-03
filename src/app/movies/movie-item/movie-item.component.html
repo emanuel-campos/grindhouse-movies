@@ -1,0 +1,24 @@
+<div class="movie-item">
+  <div class="movie-item-cover">
+    <img
+      class="movie-item-cover-image"
+      alt=""
+      [src]="cover"
+    />
+
+    <div class="movie-item-cover-footer">
+      <span (click)="toggleFavorite()">
+        <i *ngIf="!favorite" class="icon icon-heart-line"></i>
+        <i *ngIf="favorite" class="icon icon-heart-fill"></i>
+      </span>
+    </div>
+  </div>
+
+  <h3 class="movie-item-title">{{ title }}</h3>
+
+  <div class="movie-item-time">{{ time }}</div>
+
+  <div class="movie-item-rating">
+    <i *ngFor="let star of stars" class="movie-item-rating-star icon icon-star"></i>
+  </div>
+</div>
