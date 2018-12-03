@@ -10,3 +10,51 @@ body {
   font-weight: 300;
   background-color: $bg-site;
 }
+
+/* BEGIN icons */
+.has-icon-fixed {
+  position: relative;
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.has-icon-left {
+  .icon {
+    left: 20px;
+    right: auto;
+  }
+
+  .has-icon-input {
+    padding-left: 58px;
+  }
+}
+
+.has-icon-right {
+  .icon {
+    right: 20px;
+    left: auto;
+  }
+
+  .has-icon-input {
+    padding-right: 58px;
+  }
+}
+
+/* END icons */
+
+/* BEGIN forms */
+.form-control {
+  height: 50px;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+/* END forms */
