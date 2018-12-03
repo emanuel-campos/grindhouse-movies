@@ -1,4 +1,5 @@
-<section class="search container">
+<!-- BEGIN search container -->
+<section class="explorar-section search container">
   <div class="search-box">
     <div class="row">
       <div class="col-8">
@@ -19,3 +20,46 @@
     </div>
   </div>
 </section>
+<!-- END search container -->
+
+<!-- BEGIN featured-movies container -->
+<section class="explorar-section featured-movies container">
+  <app-movie-list
+    title="Em destaque"
+    view-more-link=""
+  >
+    <div class="row">
+      <div *ngFor="let featuredMovie of featuredMovies" class="col-3 featured-movies-item">
+        <app-movie-item
+          [title]="featuredMovie.title"
+          [time]="featuredMovie.time"
+          [cover]="featuredMovie.cover"
+          [rating]="featuredMovie.rating"
+          [favorite]="featuredMovie.favorite"
+        ></app-movie-item>
+      </div>
+    </div>
+  </app-movie-list>
+</section>
+<!-- END featured-movies container -->
+
+<!-- BEGIN viewed-movies container -->
+<section class="explorar-section viewed-movies container">
+  <app-movie-list
+    title="Mais assistidos"
+    view-more-link=""
+  >
+    <div class="row">
+      <div *ngFor="let mostViewedMovie of mostViewedMovies" class="col-3 viewed-movies-item">
+        <app-movie-item
+          [title]="mostViewedMovie.title"
+          [time]="mostViewedMovie.time"
+          [cover]="mostViewedMovie.cover"
+          [rating]="mostViewedMovie.rating"
+          [favorite]="mostViewedMovie.favorite"
+        ></app-movie-item>
+      </div>
+    </div>
+  </app-movie-list>
+</section>
+<!-- END viewed-movies container -->
