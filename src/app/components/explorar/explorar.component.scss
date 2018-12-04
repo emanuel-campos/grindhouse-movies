@@ -1,4 +1,4 @@
-@import '../../assets/scss/variables';
+@import '../../../assets/scss/variables';
 
 /* BEGIN geral */
 .explorar-section {
@@ -8,7 +8,7 @@
 
 /* BEGIN search */
 .search-box {
-  background: $primary-color url('../../assets/images/bg-search-box.png') no-repeat center center/cover;
+  background: $primary-color url('../../../assets/images/bg-search-box.png') no-repeat center center/cover;
   border-radius: 30px;
   padding: 45px;
   margin-top: 70px;

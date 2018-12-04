@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { FEATUREDMOVIES } from '../mocks/featured-movies';
-import { MOSTVIEWEDMOVIES } from '../mocks/most-viewed-movies';
+import { FEATUREDMOVIES } from '../../mocks/featured-movies';
+import { MOSTVIEWEDMOVIES } from '../../mocks/most-viewed-movies';
 
 @Component({
   selector: 'app-explorar',
